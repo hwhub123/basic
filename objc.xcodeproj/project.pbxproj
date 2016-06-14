@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C9CB660F1D0E87B200BE773E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB660E1D0E87B200BE773E /* main.m */; };
 		C9CB66171D0EA20400BE773E /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB66161D0EA20400BE773E /* Fraction.m */; };
+		C9F45E811D0F978C00EF3B2E /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F45E801D0F978C00EF3B2E /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		C9CB660E1D0E87B200BE773E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9CB66151D0EA20400BE773E /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		C9CB66161D0EA20400BE773E /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		C9F45E7F1D0F978C00EF3B2E /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		C9F45E801D0F978C00EF3B2E /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				C9CB660E1D0E87B200BE773E /* main.m */,
 				C9CB66151D0EA20400BE773E /* Fraction.h */,
 				C9CB66161D0EA20400BE773E /* Fraction.m */,
+				C9F45E7F1D0F978C00EF3B2E /* Calculator.h */,
+				C9F45E801D0F978C00EF3B2E /* Calculator.m */,
 			);
 			path = objc;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F45E811D0F978C00EF3B2E /* Calculator.m in Sources */,
 				C9CB660F1D0E87B200BE773E /* main.m in Sources */,
 				C9CB66171D0EA20400BE773E /* Fraction.m in Sources */,
 			);
@@ -245,6 +251,7 @@
 				C9CB66141D0E87B200BE773E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
