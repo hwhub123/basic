@@ -10,10 +10,9 @@
 
 @interface Calculator : NSObject
 
-- (void)setAccumulator: (double)value;
-- (void)clear;
-- (double)accumulator;
+@property double accumulator;
 
+- (void)clear;
 - (void)add: (double)value;
 - (void)subtract: (double)value;
 - (void)multiply: (double)value;

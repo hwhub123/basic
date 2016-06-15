@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C901BFAC1D10DFB00003313E /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C901BFAB1D10DFB00003313E /* XYPoint.m */; };
 		C9CB660F1D0E87B200BE773E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB660E1D0E87B200BE773E /* main.m */; };
 		C9CB66171D0EA20400BE773E /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB66161D0EA20400BE773E /* Fraction.m */; };
 		C9F45E811D0F978C00EF3B2E /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F45E801D0F978C00EF3B2E /* Calculator.m */; };
+		C9F45E841D0FDEAB00EF3B2E /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F45E831D0FDEAB00EF3B2E /* Car.m */; };
+		C9F45E871D0FDFAE00EF3B2E /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F45E861D0FDFAE00EF3B2E /* Tire.m */; };
+		C9F45E8A1D0FED7F00EF3B2E /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F45E891D0FED7F00EF3B2E /* ClassA.m */; };
+		C9F45E8D1D0FED9000EF3B2E /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F45E8C1D0FED9000EF3B2E /* ClassB.m */; };
+		C9F45E901D0FF03B00EF3B2E /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F45E8F1D0FF03B00EF3B2E /* Rectangle.m */; };
+		C9F45E931D0FF33E00EF3B2E /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F45E921D0FF33E00EF3B2E /* Square.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,12 +32,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C901BFAA1D10DFB00003313E /* XYPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYPoint.h; path = ../XYPoint.h; sourceTree = "<group>"; };
+		C901BFAB1D10DFB00003313E /* XYPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYPoint.m; path = ../XYPoint.m; sourceTree = "<group>"; };
 		C9CB660B1D0E87B200BE773E /* objc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = objc; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CB660E1D0E87B200BE773E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9CB66151D0EA20400BE773E /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		C9CB66161D0EA20400BE773E /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		C9F45E7F1D0F978C00EF3B2E /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		C9F45E801D0F978C00EF3B2E /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		C9F45E821D0FDEAB00EF3B2E /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		C9F45E831D0FDEAB00EF3B2E /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		C9F45E851D0FDFAE00EF3B2E /* Tire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tire.h; sourceTree = "<group>"; };
+		C9F45E861D0FDFAE00EF3B2E /* Tire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
+		C9F45E881D0FED7F00EF3B2E /* ClassA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		C9F45E891D0FED7F00EF3B2E /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
+		C9F45E8B1D0FED9000EF3B2E /* ClassB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
+		C9F45E8C1D0FED9000EF3B2E /* ClassB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
+		C9F45E8E1D0FF03B00EF3B2E /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		C9F45E8F1D0FF03B00EF3B2E /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		C9F45E911D0FF33E00EF3B2E /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		C9F45E921D0FF33E00EF3B2E /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +84,25 @@
 		C9CB660D1D0E87B200BE773E /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				C901BFAB1D10DFB00003313E /* XYPoint.m */,
+				C901BFAA1D10DFB00003313E /* XYPoint.h */,
 				C9CB660E1D0E87B200BE773E /* main.m */,
+				C9F45E881D0FED7F00EF3B2E /* ClassA.h */,
+				C9F45E891D0FED7F00EF3B2E /* ClassA.m */,
+				C9F45E8B1D0FED9000EF3B2E /* ClassB.h */,
+				C9F45E8C1D0FED9000EF3B2E /* ClassB.m */,
 				C9CB66151D0EA20400BE773E /* Fraction.h */,
 				C9CB66161D0EA20400BE773E /* Fraction.m */,
 				C9F45E7F1D0F978C00EF3B2E /* Calculator.h */,
 				C9F45E801D0F978C00EF3B2E /* Calculator.m */,
+				C9F45E821D0FDEAB00EF3B2E /* Car.h */,
+				C9F45E851D0FDFAE00EF3B2E /* Tire.h */,
+				C9F45E861D0FDFAE00EF3B2E /* Tire.m */,
+				C9F45E831D0FDEAB00EF3B2E /* Car.m */,
+				C9F45E8E1D0FF03B00EF3B2E /* Rectangle.h */,
+				C9F45E8F1D0FF03B00EF3B2E /* Rectangle.m */,
+				C9F45E911D0FF33E00EF3B2E /* Square.h */,
+				C9F45E921D0FF33E00EF3B2E /* Square.m */,
 			);
 			path = objc;
 			sourceTree = "<group>";
@@ -128,9 +163,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F45E931D0FF33E00EF3B2E /* Square.m in Sources */,
+				C9F45E871D0FDFAE00EF3B2E /* Tire.m in Sources */,
+				C9F45E901D0FF03B00EF3B2E /* Rectangle.m in Sources */,
 				C9F45E811D0F978C00EF3B2E /* Calculator.m in Sources */,
 				C9CB660F1D0E87B200BE773E /* main.m in Sources */,
+				C9F45E841D0FDEAB00EF3B2E /* Car.m in Sources */,
+				C9F45E8D1D0FED9000EF3B2E /* ClassB.m in Sources */,
+				C9F45E8A1D0FED7F00EF3B2E /* ClassA.m in Sources */,
 				C9CB66171D0EA20400BE773E /* Fraction.m in Sources */,
+				C901BFAC1D10DFB00003313E /* XYPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +263,7 @@
 		C9CB66131D0E87B200BE773E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -228,6 +271,7 @@
 		C9CB66141D0E87B200BE773E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

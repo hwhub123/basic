@@ -9,36 +9,26 @@
 #import "Calculator.h"
 
 @implementation Calculator
-{
-    double accumulator;
-}
-- (void)setAccumulator: (double)value {
-    accumulator = value;
-}
 
 - (void)clear {
-    accumulator = 0;
-}
-
-- (double)accumulator {
-    return accumulator;
+    _accumulator = 0;
 }
 
 - (void)add: (double)value {
-    accumulator += value;
+    _accumulator += value;
 }
 
 
 - (void)subtract: (double)value {
-    accumulator -= value;
+    _accumulator -= value;
 }
 
 - (void)multiply: (double)value {
-    accumulator *= value;
+    _accumulator *= value;
 }
 
 - (void)divide: (double)value {
-    accumulator /= value;
+    _accumulator /= value;
 }
 
 @end

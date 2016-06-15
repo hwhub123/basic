@@ -9,41 +9,57 @@
 #import "Fraction.h"
 
 @implementation Fraction
-{
-    int numerator;
-    int denominator;
-}
 
 - (void) print
 {
-    NSLog(@"%i/%i", numerator, denominator);
+    NSLog(@"%i/%i", _numerator, _denominator);
 }
 
-- (int) numerator;
-{
-    return numerator;
-}
 
-- (int) denominator;
-{
-    return denominator;
-}
-
-- (void) setNumerator:(int)n
-{
-    numerator = n;
-    
-}
-
-- (void) setDenominator:(int)d
-{
-    denominator = d;
+- (double) convertToNum {
+    if(_numerator !=0 )
+        return (double) _numerator / _denominator;
+    else
+        return NAN;
 }
 
 - (void) setNumerator:(int)n withDenominator:(int) d
 {
-    numerator = n;
-    denominator = d;
+    _numerator = n;
+    _denominator = d;
 }
+
+- (void) setTo: (int)n over: (int)d
+{
+    _numerator = n;
+    _denominator = d;
+}
+
+- (Fraction* ) add: (Fraction *)f
+{
+    Fraction *result = [[Fraction alloc] init];
+    
+    result.numerator = _numerator * f.denominator + _denominator * f.numerator;
+    result.denominator = _denominator * f.denominator;
+    
+    [result reduce];
+    return result;
+}
+
+- (void) reduce {
+    int u = _numerator;
+    int v = _denominator;
+    int temp;
+    
+    while( v != 0 ) {
+        temp = u % v;
+        u = v;
+        v = temp;
+    }
+
+    _numerator /= u;
+    _denominator /= u;
+}
+
 
 @end
