@@ -7,16 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ClassA.h"
 
+@class ClassA;
 
-@interface ClassB : ClassA
+@protocol ClassBProtocol <NSObject>
+- (void)startLogin;
+@end
+
+@interface ClassB : NSObject
 {
-    int y;
+    id classA;
 }
 
-- (void) setY: (int)val;
-- (void) initVar;
-- (void) printVar;
-
+- (void) setClassA:(id<ClassBProtocol>)newClassA;
+- (void) show;
+//- (void) buttonClicked;
 @end

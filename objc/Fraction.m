@@ -35,16 +35,16 @@
     _denominator = d;
 }
 
-- (Fraction* ) add: (Fraction *)f
-{
-    Fraction *result = [[Fraction alloc] init];
-    
-    result.numerator = _numerator * f.denominator + _denominator * f.numerator;
-    result.denominator = _denominator * f.denominator;
-    
-    [result reduce];
-    return result;
-}
+//- (Fraction* ) add: (Fraction *)f
+//{
+//    Fraction *result = [[Fraction alloc] init];
+//    
+//    result.numerator = _numerator * f.denominator + _denominator * f.numerator;
+//    result.denominator = _denominator * f.denominator;
+//    
+//    [result reduce];
+//    return result;
+//}
 
 - (void) reduce {
     int u = _numerator;

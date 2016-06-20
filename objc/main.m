@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Fraction.h"
-#import "Calculator.h"
-#import "Car.h"
-#import "Tire.h"
-#import "ClassA.h"
-#import "ClassB.h"
-#import "Rectangle.h"
-#import "Square.h"
-#import "XYPoint.h"
+#import "Fraction+MathOps.h"
+//#import "Fraction.h"
+//#import "Calculator.h"
+//#import "Car.h"
+//#import "Tire.h"
+//#import "ClassA.h"
+//#import "ClassB.h"
+//#import "Rectangle.h"
+//#import "Square.h"
+//#import "XYPoint.h"
+//#import "MyClass.h"
+//#import "Complex.h"
+
 
 int main(int argc, char * argv[])
 {
@@ -379,13 +383,150 @@ int main(int argc, char * argv[])
 //        NSLog(@"Origin at (%i, %i)", myRect.origin.x, myRect.origin.y);
 
 //8.6
-        ClassB *b = [[ClassB alloc] init];
-        [b initVar];
-        [b printVar];
+//        ClassB *b = [[ClassB alloc] init];
+//        [b initVar];
+//        [b printVar];
+//        
+//        b.y = 1;
+//        NSLog(@"y= %i", b.y);
+
+
+//MyClass
+//        MyClass *myClass = [[MyClass alloc] init];
+//        myClass.myVar = 10;
+//        
+//        NSLog(@"my var = %i", myClass.myVar);
+//        
+
+//9.1
+//          Fraction *f1 = [[Fraction alloc] init];
+//          Fraction *f2 = [[Fraction alloc] init];
+//        
+//          Fraction *fracResult;
+//        
+//          Complex *c1 = [[Complex alloc] init];
+//          Complex *c2 = [[Complex alloc] init];
+//        
+//          Complex *compResult;
+//        
+//          [f1 setTo:1 over: 10];
+//          [f2 setTo:2 over: 15];
+//
+//          [c1 setReal: 18.0 andImaginary: 2.5];
+//          [c2 setReal: -5.0 andImaginary: 3.2];
+//
+//          [c1 print];
+//          NSLog(@"           +");
+//        
+//          [c2 print];
+//          NSLog(@"------------");
+//
+//          compResult = [c1 add: c2];
+//          [compResult print];
+//        
+//          NSLog(@"\n");
+//        
+//          [f1 print];
+//          NSLog(@"           +");
+//        
+//          [f2 print];
+//          NSLog(@"------------");
+//        
+//          fracResult = [f1 add: f2];
+//          [fracResult print];
+
+//9.2
+//        id dataValue;
+//        Fraction *f1 = [[Fraction alloc] init];
+//        Complex *c1 = [[Complex alloc] init];
+//        
+//        [f1 setTo: 2 over: 5];
+//        [c1 setReal: 10.0 andImaginary: 2.5];
+//        
+//        dataValue = f1;
+//        [dataValue print];
+//        
+//        dataValue = c1;
+//        [dataValue print];
+
+//?
+//        ClassA *classA = [[ClassA alloc] init];
+//        [classA start];
+
+//9.3
+//        Square *mySquare = [[Square alloc] init];
+//        
+//        if([mySquare isMemberOfClass:[Square class]] == YES)
+//            NSLog(@"mySquare is a member of Square class");
+//        
+//        if([mySquare isMemberOfClass:[Rectangle class]] == YES)
+//            NSLog(@"mySquare is a member of Rectangle class");
+//        
+//        if([mySquare isMemberOfClass:[NSObject class]] == YES)
+//            NSLog(@"mySquare is a member of NSObject class");
+//
+//        
+//        if([mySquare isKindOfClass:[Square class]] == YES)
+//            NSLog(@"mySquare is a kind of Square class");
+//        
+//        if([mySquare isKindOfClass:[Rectangle class]] == YES)
+//            NSLog(@"mySquare is a kind of Rectangle class");
+//        
+//        if([mySquare isKindOfClass:[NSObject class]] == YES)
+//            NSLog(@"mySquare is a kind of NSObject class");
+//
+//        
+//        if([mySquare respondsToSelector:@selector(setSide:)] == YES)
+//            NSLog(@"mySquare responds to setSide: method");
+//        
+//        if([mySquare respondsToSelector:@selector(setWidth:andHeight:)] == YES)
+//            NSLog(@"mySquare responds to setWidth:andHeight: method");
+//        
+//        if([mySquare respondsToSelector:@selector(alloc)] == YES)
+//            NSLog(@"mySquare responds to alloc method");
+//        
+//
+//        if([Rectangle instancesRespondToSelector:@selector(setSide:)] == YES)
+//            NSLog(@"Instances of Rectangle respond to setSide: method");
+//        
+//        if([Square instancesRespondToSelector:@selector(setSide:)] == YES)
+//            NSLog(@"Instances of Square respond to setSide: method");
+//
+//        if([Square isSubclassOfClass:[Rectangle class]] == YES)
+//            NSLog(@"Square is subclass of a rectangle");
         
-        b.y = 1;
+
+
+        Fraction *a = [[Fraction alloc ] init];
+        Fraction *b = [[Fraction alloc ] init];
+        Fraction *result;
+
+        [a setTo:1 over:3];
+        [b setTo:2 over:5];
         
+        [a print]; NSLog(@"  +"); [b print]; NSLog(@"-----");
+        result = [a add: b];
+        [result print];
+        NSLog(@"\n");
+
+        [a print]; NSLog(@"  -"); [b print]; NSLog(@"-----");
+        result = [a sub: b];
+        [result print];
+        NSLog(@"\n");
+
+        [a print]; NSLog(@"  *"); [b print]; NSLog(@"-----");
+        result = [a mul: b];
+        [result print];
+        NSLog(@"\n");
+
+        
+        [a print]; NSLog(@"  /"); [b print]; NSLog(@"-----");
+        result = [a div: b];
+        [result print];
+        NSLog(@"\n");
+
+    
     }
     
-    return 0;
+      return 0;
 }

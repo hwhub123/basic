@@ -7,11 +7,20 @@
 //
 
 #import "ClassA.h"
+#import "ClassB.h"
 
 @implementation ClassA
-- (void) initVar
+- (void) start
 {
-    x =100;
+    NSLog(@"ClassA Start!");
+
+    ClassB *classB = [[ClassB alloc] init];
+    [classB setClassA: self];
+    [classB show];
 }
 
+- (void) startLogin
+{
+    NSLog(@"ClassA Login...!");
+}
 @end

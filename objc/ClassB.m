@@ -7,19 +7,28 @@
 //
 
 #import "ClassB.h"
+#import "ClassA.h"
 
 @implementation ClassB
-- (void) initVar {
-    [super initVar];
-    x = 200;
+
+- (void)setClassA:(id)newClassA {
+    classA = newClassA;
 }
 
-- (void) printVar {
-    NSLog(@"x = %i", x);
+- (void) show
+{
+    NSLog(@"ClassB Show!");
+    [self buttonClicked];
 }
 
-- (void) setY: (int)val{
-    y = val;
+- (void) buttonClicked
+{
+    if(classA) {
+        if([classA respondsToSelector:@selector(startLogin)]) {
+            [classA startLogin];
+        }
+    }
+    NSLog(@"button clicked");
 }
 
 @end

@@ -7,11 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ClassB.h"
 
-@interface ClassA : NSObject
-{
-    int x;
-}
-
-- (void) initVar;
+@interface ClassA : NSObject<ClassBProtocol>
+- (void) start;
+- (void) startLogin;
 @end
